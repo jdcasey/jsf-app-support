@@ -63,16 +63,6 @@
         <artifactId>jstl</artifactId>
         <version>1.2</version>
       </dependency>
-      <!-- <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.6.1</version>
-      </dependency> -->
-      <!-- <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-log4j12</artifactId>
-        <version>1.6.1</version>
-      </dependency> -->
       <dependency>
         <groupId>org.commonjava.util</groupId>
         <artifactId>logging</artifactId>
@@ -137,14 +127,6 @@
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
     </dependency>
-    <!-- <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-    </dependency> -->
     <dependency>
       <groupId>org.commonjava.util</groupId>
       <artifactId>logging</artifactId>
