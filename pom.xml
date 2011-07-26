@@ -10,22 +10,43 @@
   
   <modules>
     <module>jsf-app-parent</module>
+    <module>rest-app-parent</module>
   </modules>
   
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.commonjava.web</groupId>
+        <artifactId>web-common</artifactId>
+        <version>0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.enterprise</groupId>
+        <artifactId>post-office</artifactId>
+        <version>0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.web</groupId>
+        <artifactId>configuration-api</artifactId>
+        <version>${configurationVersion}</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.commonjava.web</groupId>
+      	<artifactId>configuration-dotconf</artifactId>
+      	<version>0.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.commonjava.util</groupId>
+        <artifactId>logging</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      
       <dependency>
         <groupId>org.richfaces</groupId>
         <artifactId>richfaces-bom</artifactId>
         <version>4.0.0.Final</version>
         <scope>import</scope>
         <type>pom</type>
-      </dependency>
-      
-      <dependency>
-        <groupId>org.commonjava.util</groupId>
-        <artifactId>logging</artifactId>
-        <version>1.0-SNAPSHOT</version>
       </dependency>
       
       <!-- START: PROVIDED DEPENDENCIES -->
@@ -196,4 +217,8 @@
       </plugins>
     </pluginManagement>
   </build>
+  <properties>
+    <configurationVersion>0.1-SNAPSHOT</configurationVersion>
+    <userManagerVersion>0.1-SNAPSHOT</userManagerVersion>
+  </properties>
 </project>
