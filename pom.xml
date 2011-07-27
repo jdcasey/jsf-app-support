@@ -139,12 +139,14 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>4.1.0.Final</version>
+        <scope>provided</scope>
       </dependency>
       <!-- JPA Persistence Dependencies -->
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
         <version>3.6.1.Final</version>
+        <scope>provided</scope>
         <exclusions>
           <exclusion>
             <groupId>javax.transaction</groupId>
@@ -156,6 +158,7 @@
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.0-api</artifactId>
         <version>1.0.0.Final</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
