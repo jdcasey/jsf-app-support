@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   Copyright (C) 2011  John Casey
   
@@ -16,19 +16,15 @@
   License along with this program.  If not, see 
   <http://www.gnu.org/licenses/>.
 -->
-<project xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='http://maven.apache.org/POM/4.0.0'>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
   <parent>
     <groupId>org.commonjava.web</groupId>
     <artifactId>webapp-parent</artifactId>
     <version>1-SNAPSHOT</version>
   </parent>
-  
   <artifactId>rest-app-parent</artifactId>
-  
   <packaging>pom</packaging>
-  
   <dependencies>
     <dependency>
       <groupId>org.apache.shiro</groupId>
@@ -38,9 +34,7 @@
       <groupId>org.apache.shiro</groupId>
       <artifactId>shiro-web</artifactId>
     </dependency>
-    
     <!-- Bean Validation Dependencies -->
-    
     <!-- JPA Persistence Dependencies -->
     <dependency>
       <groupId>org.commonjava.util</groupId>
@@ -68,12 +62,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    	<groupId>org.jboss.spec.javax.servlet</groupId>
-    	<artifactId>jboss-servlet-api_3.0_spec</artifactId>
+      <groupId>org.jboss.spec.javax.servlet</groupId>
+      <artifactId>jboss-servlet-api_3.0_spec</artifactId>
     </dependency>
     <dependency>
-    	<groupId>javax.enterprise</groupId>
-    	<artifactId>cdi-api</artifactId>
+      <groupId>javax.enterprise</groupId>
+      <artifactId>cdi-api</artifactId>
     </dependency>
     <!-- <dependency>
       <groupId>org.jboss.resteasy</groupId>
@@ -81,8 +75,15 @@
     </dependency> -->
     <dependency>
       <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxrs</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
       <artifactId>jaxrs-api</artifactId>
-      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-cdi</artifactId>
     </dependency>
   </dependencies>
 </project>
